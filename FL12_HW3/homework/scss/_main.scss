@@ -1,0 +1,264 @@
+// Write your styles here
+
+@import "_variables1";
+// @import "_variables2"; // Pls uncomment this if u want to switch version
+
+$map : ('margin':192px);
+
+@mixin buttonsStyle {
+    background-color: $buttonColor;
+    color: #f2f3e7;
+    height: 48px;
+    width: 142px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@mixin linksStyle {
+    color: #fffff5;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: $mainBGColor;
+}
+
+.header
+{
+    background-image: $bgImgURL;
+    background-color: $mainBGColor;
+    border-radius: 0 0 50% 0;
+    height: 720px;
+    img
+    {
+        display: inline-block;
+        margin-top: 21px;
+        margin-left: map-get($map, 'margin');
+    }
+
+}
+
+.landing-logo
+{
+    position: relative;
+    p
+    {
+        margin-left: 3px;
+        display: inline-block;
+        text-align: center;
+        font-family: $second_Font;
+        font-size: 20px;
+        color: $color;
+        font-weight: bold;
+        span
+        {
+            display: block;
+            font-size: 10px;
+        }
+    }
+}
+
+.header_heading
+{
+    white-space: pre-line;
+    font-family: $first_Font;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 50px;
+    color: $color;
+    margin-left: map-get($map, 'margin');
+    .bg_color
+    {
+        background-color: $bgColor;
+    }
+}
+
+.header_text
+{
+    white-space: pre-line;
+    color: $color;
+    margin-left: 192px;
+}
+
+.header_button
+{
+    @include buttonsStyle();
+    margin-top: 62px;
+    margin-left: 192px;
+}
+
+.login
+{
+    @include linksStyle();
+    margin-left: 153px;
+}
+
+.section_text
+{
+    font-size: 35px;
+    text-align: center;
+    font-family: $second_Font;
+    font-weight: bold;
+    margin-top: 31px;
+    .bg_color
+    {
+        background-color: $bgColor;
+        position: relative;
+    }
+}
+
+.section_card_wrap
+{
+    .section_card
+    {
+        margin-top: 25px;
+    }
+}
+
+.section_card
+{
+    font-family: $first_Font;
+    font-weight: light;
+    background-color: $blockColor;
+    width: 1116px;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    .section_card_img
+    {
+        width: 431px;
+        height: 286px;
+        border-radius: 3px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section_card_heading
+    {
+        font-weight: bold;
+        color: white;
+    }
+    .section_card_right_container
+    {
+        display: inline-block;
+        float: right;
+        white-space: pre-line;
+        text-align: center;
+        margin-right: 108px;
+        margin-top: 35px;
+    }
+    .section_card_text
+    {
+        color: #d8d8d8;
+        text-align: justify;
+    }
+    .section_link
+    {
+        @include linksStyle();
+    }
+}
+
+.section_banner_button
+{
+    @include buttonsStyle();
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-top: 40px;
+    margin-right: 161px;
+}
+footer
+{
+    background-color: $blockColor;
+    height: 243px;
+}
+
+.footer-cr
+{
+    color: white;
+}
+
+.footer_logo
+{
+    p
+    {
+        color: white;
+    }
+}
+
+.footer_wrap
+{
+    >.landing-logo
+    {
+        display: inline-block;
+        margin-left: 193px;
+        margin-top: 138px;
+    }
+}
+
+.section_banner
+{
+    position: relative;
+    font-size: 25px;
+    font-family: $second_Font;
+    font-weight: bold;
+    background: rgb(99,146,21);
+    background: $gradientColors;
+    border-radius: 5px;
+    width: 1198px;
+    height: 144px;
+    margin: 0 auto;
+    margin-top: 210px;
+    top:50px;
+    .bg_color
+    {
+        background-color: $bgColor;
+    }
+}
+
+.section_banner_text
+{
+    font-size: 15px;
+    color: #d8d8d8;
+    margin-top: 20px;
+
+}
+
+.section_banner_text_wrap
+{
+    display: inline-block;
+    margin-left: 163px;
+    margin-bottom: 55px;
+    margin-top: 20px;
+}
+
+.footer_logo.landing-logo
+{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.footer_text
+{
+    display: inline-block;
+    white-space: pre-line;
+    color: #d8d8d8;
+    font-size: 10px;
+    font-family: $second_Font;
+    margin-left: 420px;
+}
+
+.footer-cr
+{
+    @extend .footer_text;
+    margin-left: 400px;
+}

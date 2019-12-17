@@ -1,0 +1,232 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+.menu
+{
+    height: 86px;
+    background-color: #FFFFFF;
+}
+
+.name
+{
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 30px;
+    color: #777;
+    font-weight: bold;
+}
+
+.home_img
+{
+    height: 113.5vh;
+    background-image: url("../img/home-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    width: 105%;
+}
+
+.menu_list
+{
+    position: relative;
+    list-style: none;
+    float: right;
+    margin-right: 240px;
+    bottom: 15px;
+}
+
+.menu_list li
+{
+    float: left;
+    margin-left: 47px;
+}
+
+.menu_list li a
+{
+    text-decoration: none;
+    color: #777;
+}
+
+.menu_list li a:hover
+{
+    color: #bfba55;
+}
+
+.home_img::before
+{
+    content: '\A';
+    position: absolute;
+    width: 105%; height:113.5vh;
+    top: 86px;
+    background:rgba(0,0,0,0.7);
+}
+
+.home_header
+{
+    white-space: pre-line;
+}
+
+.button_header
+{
+    background-color: #fff;
+    color: black;
+    border:none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    height: 44px;
+    width: 158px;
+    border-radius: 30px;
+    position: absolute;
+    top: 110%;
+    right: 44.5%;
+}
+
+.home_header span
+{
+    color: #bfba55;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.home_header
+{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.nav_home
+{
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+.blogs
+{
+    width: 945px;
+    display: block;
+    margin: 0 auto;
+}
+
+.photo
+{
+    width: 945px;
+    height: 630px;    
+    margin-top: 113px;
+}
+
+.txtBlog
+{
+    margin-top: 40px;
+    color: #777;
+}
+
+.txtBlog h2
+{
+    color: #000;
+}
+
+.authorPhoto
+{
+    float: left;
+    border-radius: 50%;
+    width: 5%;
+    height: auto;
+}
+
+.authorName
+{
+    float: left;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+
+.authorName span
+{
+    margin-left: 20px;
+}
+
+.imgBlog
+{
+    margin-top: 17px;
+}
+
+.mainBlogtxt
+{
+    display: inline-block;
+    margin-top: 17px;
+}
+
+.blogButton
+{
+    background-color: #fff;
+    color: #777;
+    border: 1px solid #777;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 30px;
+    height: 44px;
+    width: 158px;
+    margin-top: 30px;
+}
+
+ul li
+{
+    list-style: none;
+}
+
+footer
+{
+    height: 357px;
+    background-color: #000;
+    margin-top: 112px;
+}
+
+.epamLab
+{
+    display: inline-block;
+    color: #777;
+    width: 428px;
+    margin-top: 7%;
+    margin-left: 17%;
+}
+
+.epamLab span
+{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.epamLab div
+{
+    margin-top: 25px;
+}
+
+.talkSection
+{
+    display: inline-block;
+    color: #777;
+    width: 428px;
+    margin-left: 14%;
+}
+
+.talkSection ul li
+{
+    list-style: none;
+    margin-top: 21px;
+}

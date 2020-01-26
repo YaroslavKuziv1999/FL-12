@@ -1,0 +1,49 @@
+/* Todo: your styles go here*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pos{
+    position: relative;
+    top: 3px;
+}
+
+ul, li {
+    list-style-type: none;
+    cursor: pointer;
+    padding-inline-start: 3px;
+}
+
+.folder:hover, .file:hover {
+    background-color: lightgrey;
+}
+
+.close::after {
+    content: "folder";
+}
+
+.open::after {
+    content: 'folder_open';
+}
+
+.folder i {
+    color: rgb(201, 183, 20);
+    vertical-align: bottom;
+    font-size: 20px;
+}
+
+.file i {
+    color: rgb(117, 114, 114);
+    vertical-align: bottom;
+    font-size: 20px;
+}
+
+.folderLook {
+    display: none;
+}
+
+.actived {
+    display: block;
+}
+
